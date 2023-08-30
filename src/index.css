@@ -5,3 +5,8 @@
 body{
     background-color: #F0F3FF !important;
 }
+
+.ass{
+    transform: translateX(0);
+    display: flex !important;
+}

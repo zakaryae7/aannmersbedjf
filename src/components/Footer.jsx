@@ -7,17 +7,20 @@ import Location from '../assets/locaB.png';
 function Footer() {
     let ListStyle = "flex items-center gap-5";
     return (
-        <div className="pt-20 pb-10 bg-White mt-20">
-            <div className='flex justify-around'>
-                <img src={logo} className='h-10 brightness-0' />
+        <div className="pt-20 pb-10 bg-White mt-20 px-10">
+            <div className='flex justify-around md:flex-row flex-col gap-20'>
+                <img src={logo} className='h-10 brightness-0 w-max mb-10' />
                 <div className='flex flex-col gap-10'>
                     <h1 className='font-medium text-xl'>Diensten</h1>
                     <ul className='flex flex-col gap-5 text-sm'>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
+                        <li>Toilet-en badkamer renovaties</li>
+                        <li>Pleisterwerk</li>
+                        <li>Stormschade</li>
+                        <li>Plat Dak</li>
+                        <li>Loodwerkzaamheden</li>
+                        <li>Dakinspactie</li>
+                        <li>Vloerverwarming</li>
+                        <li>Installatie werk</li>
                     </ul>
                 </div>
                 <div className='flex flex-col gap-10'>
@@ -38,7 +41,12 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <p className="text-third text-sm mt-20 border-t border-border pt-5 mx-10">© 2023 Aannemersbedrijf, Created By  <Link className='underline' to={"www.royalleasewebsites.com"}> Royal Lease Websites.</Link></p>
+            <div className='border-t border-border mt-20 pt-5 md:mx-10 flex justify-between'>
+                <p className="text-third text-sm ">© 2023 Aannemersbedrijf, Created By  <Link className='underline' to={"www.royalleasewebsites.com"}> Royal Lease Websites.</Link></p>
+                <Link to={"/terms"}>
+                    <p className='text-third text-sm underline hover:text-orange-400 duration-300 cursor-pointer'>Algemene Voorwaarden</p>
+                </Link>
+            </div>
         </div>
     );
 }

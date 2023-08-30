@@ -11,7 +11,7 @@ function ContactForm() {
     }
 
     //Styles variables
-    let inputClass = "border border-border rounded focus:outline-none py-1 px-2 w-full mb-5 mt-1";
+    let inputClass = "border border-border rounded focus:outline-none py-1 px-2 w-full mb-5 mt-1     ";
 
     return (
         <div>
@@ -20,7 +20,7 @@ function ContactForm() {
                 onSubmit={handleSubmit}
             >
                 <label htmlFor="name">
-                    Naam
+                    <p>Naam</p>
                     <input
                         required
                         type="name"
@@ -29,7 +29,7 @@ function ContactForm() {
                     />
                 </label>
                 <label htmlFor="email">
-                    E-mail
+                    <p>E-mail</p>
                     <input
                         required
                         type="email"
@@ -38,7 +38,7 @@ function ContactForm() {
                     />
                 </label>
                 <label htmlFor="email">
-                    Telefoonnummer
+                    <p>Telefoonnummer</p>
                     <input
                         required
                         type="phone"
@@ -57,7 +57,7 @@ function ContactForm() {
                         required
                         id="message"
                         name="message"
-                        className={inputClass + " placeholder:text-sm h-40"}
+                        className={inputClass + " placeholder:text-sm h-40 w-full"}
                         placeholder='Probeer ons zoveel mogelijk informatie te geven voor een zo exact mogelijke prijsopgave.'
                     />
                 </label>
@@ -68,7 +68,7 @@ function ContactForm() {
                 />
                 <button
                     type="submit"
-                    className='bg-black text-white w-max px-6 py-1.5 rounded ml-auto -mt-2 hover:opacity-80 duration-300'
+                    className='bg-lightorange text-white w-max px-6 py-1.5 rounded ml-auto -mt-2 hover:opacity-80 duration-300'
                     disabled={state.submitting}>Bekijk diensten</button>
             </form>
         </div>
