@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
-import serviceData from './servicesData';
 import ServiceList from './serviceList';
 
 export function ServicesP(props) {
@@ -16,7 +15,7 @@ export function ServicesP(props) {
                     </div>
                 </div>
             </div>
-            <ServiceList services={serviceData} />
+            <ServiceList/>
         </div>
     )
 }

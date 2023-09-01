@@ -141,7 +141,7 @@ const servicesData = [
         diensten: 'Onder diensten :',
         image: "src/assets/images/'Schilder en stucwerk'.avif",
         description: "'Schilder en stucwerk' Richt zich op het verbeteren van de esthetiek van oppervlakken door schilderen en stucwerk (pleisterwerk), wat zorgt voor zowel bescherming als visuele aantrekkingskracht.",
-        miniminiservices: [
+        miniservices: [
             "Binnen- en buitenschilderwerk",
             "Sierpleisterwerk",
             "Behangen",
