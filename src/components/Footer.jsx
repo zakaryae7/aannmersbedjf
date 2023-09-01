@@ -41,7 +41,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div className='border-t border-border mt-20 pt-5 md:mx-10 flex justify-between'>
+            <div className='border-t border-border text-center lg:text-start mt-20 pt-5 lg:mx-10 flex gap-5 lg-flex-row flex-col justify-between'>
                 <p className="text-third text-sm ">© 2023 Aannemersbedrijf, Created By  <Link className='underline' to={"www.royalleasewebsites.com"}> Royal Lease Websites.</Link></p>
                 <Link to={"/terms"}>
                     <p className='text-third text-sm underline hover:text-orange-400 duration-300 cursor-pointer'>Algemene Voorwaarden</p>
