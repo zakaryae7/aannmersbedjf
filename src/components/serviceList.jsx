@@ -12,12 +12,12 @@ const ServiceList = () => {
         <div>
             <h2>Available Miniservices:</h2>
             <ul>
-                {uniqueMiniservices.length > 0 ? (
+                {uniqueMiniservices.length > 0 ? ( // Check if there are unique miniservices
                     uniqueMiniservices.map((miniservice, index) => (
-                        <li key={index}>{miniservice}</li>
+                        <li key={index}>{miniservice}</li> // Map and display unique miniservices
                     ))
                 ) : (
-                    <li>No miniservices available</li>
+                    <li>No miniservices available</li> // Display this message if there are no miniservices
                 )}
             </ul>
         </div>
