@@ -1,0 +1,14 @@
+/* styles.css (or your preferred CSS file) */
+
+/* Style for the Mini-Services list */
+.mini-services-list {
+    margin-top: 10px;
+  }
+  
+  /* Style for individual list items */
+  .mini-service-item {
+    color: #EA580B;
+    margin-left: 20px;
+    list-style-type: square; /* You can change this to your preferred list style */
+  }
+  
