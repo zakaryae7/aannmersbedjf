@@ -20,11 +20,11 @@ export function ServicesP(props) {
         </div>
       </div>
       {props.services && props.services.length > 0 && (
-        <div className="mt-5">
-          <h2 className="text-xl font-semibold">Mini-Services:</h2>
-          <ul className="mini-services-list">
+        <div className="mt-5 mx-20 text-xl">
+          <h2 className="text-3xl mb-5 font-semibold text-orange-400">Mini-Services:</h2>
+          <ul className="">
             {props.services.map((miniservice, index) => (
-              <li key={index} className="mini-service-item">{miniservice}</li>
+              <li key={index} className="mini-service-item text-black">{miniservice}</li>
             ))}
           </ul>
         </div>
