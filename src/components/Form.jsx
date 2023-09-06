@@ -1,8 +1,58 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import { Link } from 'react-router-dom'
+import { useState } from 'react';
 
 function Form() {
+    const [formData, setFormData] = useState({
+        address: '',
+        house_number: '',
+        postcode: '',
+        city: 'No city On this Form',
+        first_name: '',
+        last_name: '',
+        phone_number: '',
+        email: '',
+        description: '',
+        domain_from : window.location.origin
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
+
+    const handleFormSubmit = (e) => {
+        e.preventDefault();
+
+        // Send data to the backend
+        const apiUrl = 'https://leads-admin-production.up.railway.app/api/create-message/';
+
+        fetch(apiUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+        })
+            .then(response => {
+                if (response.ok) {
+                    console.log('Data sent successfully:', formData);
+                    // You can handle success as needed, e.g., showing a success message.
+                } else {
+                    console.error('Failed to send data');
+                    // Handle the error, e.g., displaying an error message.
+                }
+            })
+            .catch(error => {
+                console.error('An error occurred', error);
+                // Handle network errors or other exceptions.
+            });
+    };
+
+
+
+
     const [state, handleSubmit] = useForm("mknlbwdk");
     if (state.succeeded) {
         return <div className='text-cente text-center'>
@@ -15,7 +65,7 @@ function Form() {
     var pathArray = window.location.search.split("?s=");
 
     return (
-        <form onSubmit={handleSubmit} className='flex flex-col justify-center w-[90%] gap-5  lg:w-1/3 mx-auto'>
+        <form onSubmit={handleFormSubmit} className='flex flex-col justify-center w-[90%] gap-5  lg:w-1/3 mx-auto'>
             <div className='flex justify-between gap-5'>
                 <div className='flex flex-col w-[48%]'>
                     <label htmlFor="email" className={labelStyle}>
@@ -23,8 +73,9 @@ function Form() {
                     </label>
                     <input
                         type="name"
-                        name="fname"
+                        name="first_name"
                         className={inputstyle}
+                        onChange={handleChange}
                         required
                     />
                 </div>
@@ -34,8 +85,9 @@ function Form() {
                     </label>
                     <input
                         type="name"
-                        name="lname"
+                        name="last_name"
                         className={inputstyle}
+                        onChange={handleChange}
                         required
                     />
                 </div>
@@ -47,8 +99,9 @@ function Form() {
                     </label>
                     <input
                         type="address"
-                        name="Straat + Huisnr"
+                        name="address"
                         className={inputstyle}
+                        onChange={handleChange}
                         required
                     />
                 </div>
@@ -60,6 +113,7 @@ function Form() {
                         type="postcode"
                         name="postcode"
                         className={inputstyle}
+                        onChange={handleChange}
                         required
                     />
                 </div>
@@ -70,8 +124,9 @@ function Form() {
                 </label>
                 <input
                     type="residence"
-                    name="residence"
+                    name="house_number"
                     className={inputstyle}
+                    onChange={handleChange}
                     required
                 />
             </div>
@@ -84,6 +139,7 @@ function Form() {
                     type="email"
                     name="email"
                     className={inputstyle}
+                    onChange={handleChange}
                     required
                 />
                 <ValidationError
@@ -98,8 +154,9 @@ function Form() {
                 </label>
                 <input
                     type="phone"
-                    name="phonenum"
+                    name="phone_number"
                     className={inputstyle}
+                    onChange={handleChange}
                     required
                 />
                 <ValidationError
@@ -113,8 +170,9 @@ function Form() {
                     Wat heeft u zelf in gedachten?
                 </label>
                 <textarea
-                    name="message"
+                    name="description"
                     className={inputstyle + " h-40"}
+                    onChange={handleChange}
                     required
                 />
                 <ValidationError
