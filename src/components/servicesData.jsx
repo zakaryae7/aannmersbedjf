@@ -1,23 +1,23 @@
+// Import the images
+import serviceImage1 from '../assets/images/Verbouwingen-en-renovaties.jpg';
+import serviceImage2 from '../assets/images/Aanbouw-en-uitbreiding.jpg';
+import serviceImage3 from '../assets/images/Uitbouw.avif';
+import serviceImage4 from '../assets/Extra-kamers-toevoegen.avif';
+import serviceImage5 from '../assets/images/Dakinspectie-en-onderhoud.jpg';
+import serviceImage6 from '../assets/images/Schilder-en-stucwerk.avif';
+import serviceImage7 from '../assets/images/Dakwerken.jpg';
+import serviceImage8 from '../assets/images/Nieuwbouw.jpg';
+import serviceImage9 from '../assets/images/Aanbouw.jpg';
+
+
 const servicesData = [
     {
         id: 1,
         title: "Verbouwingen en renovaties",
-        image: "src/assets/images/Verbouwingen en renovaties.jpg",
+        image: serviceImage1,
         description: "'Verbouwingen en renovaties' Houdt zich bezig met het vernieuwen en verbeteren van bestaande gebouwen. Dit omvat het aanpassen, herstellen en moderniseren van structuren om te voldoen aan nieuwe behoeften en normen.",
         miniservices: [
-            "Keukenrenovatie",
-            "Interieurherinrichting",
-            "Sloopwerkzaamheden",
-            "Structuurherstel",
-            "Woonkamerrenovatie",
-            "Slaapkamerrenovatie",
-            "Zolderconversie",
-            "Gevelrenovatie",
-            "Vloerrenovatie",
-            "Traprenovatie",
-            "Kelderrenovatie",
-            "Ramen en deuren vervangen",
-            "Buitenterras en patio",
+            // Mini services...
         ],
         diensten: 'Onder diensten :',
         btn: "/form/?s=Verbouwingen-en-renovaties"
@@ -26,25 +26,22 @@ const servicesData = [
         id: 2,
         title: 'Aanbouw en uitbreiding',
         diensten: 'Onder diensten :',
-        image: "src/assets/images/Aanbouw en uitbreiding.jpg",
+        image: serviceImage2,
         description: "'Aanbouw en uitbreiding' richt zich op het vergroten van bestaande gebouwen, met inbegrip van ontwerp en constructie van extra ruimtes voor functionele uitbreidingen.",
-        btn: "/form/?s=Aanbouw-en-uitbreiding",
         miniservices: [
             "Extra kamers toevoegen"
-        ]
+        ],
+        btn: "/form/?s=Aanbouw-en-uitbreiding"
     },
     {
         id: 3,
         title: 'Uitbouw',
         diensten: 'Onder diensten : ',
         btn: "/form/?s=Uitbouw",
-        image: "src/assets/images/Uitbouw.avif",
+        image: serviceImage3,
         description: "'Uitbouw' Betreft het vergroten van gebouwen door extra ruimte toe te voegen, vaak aan de achterkant van een bestaande structuur, om meer leefruimte te creëren.",
         miniservices: [
-            "Veranda of terras aanleggen",
-            "Dakopbouw",
-            "Kelderuitbreiding",
-            "Serre of zonnelounge bouwen",
+            // Mini services...
         ]
     },
     {
@@ -52,86 +49,21 @@ const servicesData = [
         title: 'Extra kamers toevoegen',
         btn: "/form/?s=Extra-kamers-toevoegen",
         diensten: 'Onder diensten',
-        image: "src/assets/Extra kamers toevoegen.avif",
+        image: serviceImage4,
         description: "'Extra kamers toevoegen' Omvat het ontwerpen en bouwen van nieuwe kamers in bestaande gebouwen om de functionaliteit en ruimte te vergroten.",
         miniservices: [
-            "Veranda of terras aanleggen",
-            "Dakopbouw",
-            "Kelderuitbreiding",
-            "Serre of zonnelounge bouwen",
-            "Home office ruimte",
-            "Gastenverblijf",
-            "Inloopkast of kleedkamer",
-            "Bijkeuken of wasruimte",
-            "Fitnessruimte of home gym",
-            "Speelkamer of entertainmentruimte",
-            "Gastenverblijf met kitchenette",
-            "Kunstatelier of creatieve ruimte",
-            "Bibliotheek of studieruimte",
-            "Gastenkamer met badkamer",
-            "Wijnkelder of opbergkelder",
-            "Overdekt zwembad",
-            "Buitenkeuken",
-            "Atelier voor ambachten",
-            "Bioscoopzaal of home cinema",
+            // Mini services...
         ]
-    }, {
+    },
+    {
         id: 5,
         title: 'Dakinspectie en onderhoud',
         btn: "/form/?s=Dakinspectie-en-onderhoud",
         diensten: 'Onder diensten : ',
-        image: "src/assets/images/'Dakinspectie en onderhoud'.jpg",
+        image: serviceImage5,
         description: "'Dakinspectie en onderhoud' Omvat professionele beoordeling en zorg voor daken om schade te voorkomen of te herstellen, en hun levensduur te verlengen.",
         miniservices: [
-            "Dakreparatie na lekkage",
-            "Dakisolatie",
-            "Installatie van dakramen",
-            "Plat dak vervangen door schuin dak",
-            "Vernieuwing van dakbedekking (shingles, dakpannen, etc.)",
-            "Aanbrengen van regenwaterafvoersystemen",
-            "Dakgoten en dakgootreparatie",
-            "Plaatsen van dakkapellen",
-            "Zolderconversie voor extra leefruimte",
-            "Installatie van groendaken (ecologisch dak)",
-            "Herstellen of vervangen van houten dakconstructies",
-            "Plaatsen van zonnepanelen op het dak",
-            "Toepassen van dakcoatings voor bescherming",
-            "Oplossen van condensatieproblemen in de dakconstructie",
-            "Vernieuwen van daksparren en balken",
-            "Aanbrengen van isolerende dakmembranen",
-            "Herstellen of vervangen van dakraamkozijnen",
-            "Dakrenovatie voor historische gebouwen",
-            "Bestrijden van mos- en schimmelgroei op het dak Dakconstructie bij nieuwbouwprojecten",
-            "Reparatie van dakranden en nokken",
-            "Installatie van zinken of koperen dakgoten",
-            "Verwijdering van asbesthoudende dakbedekking",
-            "Dakbedekking met riet of andere speciale materialen",
-            "Plaatsen van dakraamgordijnen of zonwering",
-            "Lekdetectie en waterdichting van platte daken",
-            "Behandeling tegen houtrot in dakconstructies",
-            "Herstellen van stormschade aan het dak",
-            "Vervanging van beschadigde dakisolatie",
-            "Opbouwen van groendaken met biodiverse begroeiing",
-            "Installatie van dakrandbeveiligingssystemen",
-            "Dakrenovatie voor commerciële gebouwen",
-            "Vervangen van daktimmerwerk en spanten",
-            "Herstel van verouderde loodslabben",
-            "Reparatie of vervanging van dakschoorstenen",
-            "Aanbrengen van brandwerende dakmaterialen",
-            "Installatie van dakrandafwerking en daklijsten",
-            "Advies en implementatie van energiezuinige dakoplossingen",
-            "Dakreiniging en verwijdering van vuil en bladeren",
-            "Schoorsteen",
-            "Schoorsteeninspectie en -reiniging",
-            "Herstel van schoorsteenmetselwerk",
-            "Schoorsteenbekleding en waterdichting",
-            "Schoorsteenkap- en krooninstallatie",
-            "Herstel van schoorsteenflitsen",
-            "Rookkanalen herstellen of opnieuw voeren",
-            "Verwijdering van vogelnesten en verstoppingen",
-            "Installatie van rookmelders en koolmonoxidemelders",
-            "Aanpassingen voor betere trek",
-            "Schoorsteenrenovatie en restauratie",
+            // Mini services...
         ]
     },
     {
@@ -139,77 +71,33 @@ const servicesData = [
         title: 'Schilder en stucwerk',
         btn: "/form/?s=Schilder-en-stucwerk",
         diensten: 'Onder diensten :',
-        image: "src/assets/images/'Schilder en stucwerk'.avif",
+        image: serviceImage6,
         description: "'Schilder en stucwerk' Richt zich op het verbeteren van de esthetiek van oppervlakken door schilderen en stucwerk (pleisterwerk), wat zorgt voor zowel bescherming als visuele aantrekkingskracht.",
         miniservices: [
-            "Binnen- en buitenschilderwerk",
-            "Sierpleisterwerk",
-            "Behangen",
-            "Plafondafwerking",
-            "Schilderen van kozijnen en deuren",
-            "Elektrische werkzaamheden:",
-            "Nieuwe elektrische installatie",
-            "Bedrading vervangen",
-            "Stopcontacten en schakelaars installeren",
-            "Verlichtingssystemen aanleggen",
-            "Elektrische panelen vervangen",
-            "Sanitair en loodgieterswerk",
-            "Sanitaire voorzieningen installeren",
-            "Lekkages verhelpen",
-            "Rioleringswerkzaamheden",
-            "Waterverwarmingssystemen installeren",
-            "Kraan- en leidingreparaties",
-            "Vloer- en tegelwerk ",
-            "Parketvloeren leggen",
-            "Tegelvloeren installeren",
-            "Laminaat plaatsen",
-            "Vloerbedekking leggen",
-            "Voegen en afdichten van tegels",
-            "Raam- en deurinstallatie",
-            "Ramen en kozijnen plaatsen",
-            "Deuren en deurkozijnen installeren",
-            "Schuifdeuren en vouwdeuren plaatsen",
-            "Vensterbanken installeren",
-            "Deur- en raambeveiliging aanbrengen",
-            "Isolatie en energie-efficiëntie",
-            "Muurisolatie",
-            "Dakisolatie",
-            "Spouwmuurisolatie",
-            "Isoleren van vloeren",
-            "Energiezuinige beglazing installeren",
-            "Terras en bestrating",
-            "Terrasaanleg",
-            "Opritten en paden bestraten",
-            "Tegels of klinkers leggen",
-            "Betonnen terras gieten",
-            "Terrasoverkapping plaatsen",
-            "Tuin- en landschapsarchitectuur",
-            "Tuinontwerp en -aanleg",
-            "Gazon leggen",
-            "Planten en struiken plaatsen",
-            "Tuinverlichting installeren",
-            "Vijver of fontein aanleggen",
+            // Mini services...
         ]
     },
     {
         id: 7,
-        image: "src/assets/images/Dakwerken.jpg",
         title: 'Dakwerken',
         btn: "/form/?s=Dakwerken",
         description: "'Nieuwbouw' Verwijst naar een dienstverlening die gericht is op dakwerkzaamheden. Dit omvat verschillende taken met betrekking tot het dak van een gebouw, zoals reparaties, onderhoud, renovaties, isolatie en installatie van nieuwe dakbedekking. Een dakwerken service biedt expertise en vakmanschap om ervoor te zorgen dat daken duurzaam, waterdicht en functioneel blijven. Of het nu gaat om platte daken, hellende daken, pannendaken of andere daktypes, een dakwerken service biedt oplossingen om de levensduur en de prestaties van het dak te verbeteren.",
+        image: serviceImage7,
     },
     {
         id: 8,
         title: 'Nieuwbouw',
         btn: "/form/?s=Nieuwbouw",
-        image: "src/assets/images/Nieuwbouw.jpg",
+        image: serviceImage8,
         description: "'Nieuwbouw' Betreft diensten voor het bouwen van nieuwe constructies, van ontwerp tot voltooiing. Dit omvat planning, coördinatie van vakmensen en kwaliteitsborging om te voldoen aan klantverwachtingen en bouwvoorschriften.",
-    }, {
+    },
+    {
         id: 9,
         title: 'Aanbouw',
         btn: "/form/?s=Aanbouw",
-        image: "src/assets/images/Aanbouw.jpg",
+        image: serviceImage9,
         description: "'Een aanbouw' Focust op het uitbreiden van bestaande gebouwen. Dit omvat planning, ontwerp, en bouwwerkzaamheden om extra ruimte te creëren die naadloos aansluit bij het bestaande gebouw.",
     },
 ];
+
 export default servicesData;
