@@ -16,7 +16,7 @@ function Home() {
                     <h1 className="md:text-6xl text-4xl font-bold my-2 md:text-start text-center">Welkom bij ons Aannemersbedrijf Your Solutions</h1>
                     <p className="font-medium text-third my-5 md:text-start text-center">Uw betrouwbare partner voor al uw bouw- en renovatiebehoeften. Met jarenlange ervaring en expertise in de bouwsector, zijn wij toegewijd aan het leveren van hoogwaardige diensten aan onze klanten.</p>
                     <div className="flex gap-7 md:justify-normal justify-center">
-                        <Link to={"#"} className=' text-white hover:opacity-80 duration-300 text-sm bg-lightorange px-4 rounded-3xl py-2'>Bekijk diensten</Link>
+                        <Link to={"/diensten"} className=' text-white hover:opacity-80 duration-300 text-sm bg-lightorange px-4 rounded-3xl py-2'>Bekijk diensten</Link>
                         <Link to={"/form/?s=Verbouwingen-en-renovaties"} className=' text-black hover:text-white hover:bg-third hover:border-third duration-300 text-sm border border-black px-4 rounded-3xl py-2'>Offerte aanvraag</Link>
                     </div>
                 </div>
